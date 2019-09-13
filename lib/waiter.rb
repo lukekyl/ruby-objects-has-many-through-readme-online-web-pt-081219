@@ -30,5 +30,11 @@ class Waiter
     }
     best_tipped_meal.customer
   end
+  def most_frequent
+    most_frequent_customer = customers.max{|customer_a, customer_b|
+      customer_a.meals.length <=> customer_b.meals.length
+    }
+    most_frequent_customer.name
+  end
   
 end
