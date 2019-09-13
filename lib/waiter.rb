@@ -19,5 +19,9 @@ class Waiter
       meal.waiter == self
     }
   end
-  
+  def customers
+    meals.map{|customer|
+      
+    }
+  end
 end
